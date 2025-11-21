@@ -1,3 +1,4 @@
+//1
 let choice = "Чай";
 
 switch (choice) {
@@ -14,6 +15,7 @@ switch (choice) {
     console.log("Інше");
 }
 
+//2
 let day = "Субота";
 
 if (day == "Субота" || day == "Неділя") {
@@ -22,6 +24,7 @@ if (day == "Субота" || day == "Неділя") {
   console.log("Робочий день");
 }
 
+//3
 let num = 4;
 
 if (num == 3 || num == 4 || num == 5) {
@@ -36,6 +39,7 @@ if (num == 3 || num == 4 || num == 5) {
   console.log("Некоректний номер місяця.");
 }
 
+//4
 let color = "зелений";
 
 switch (color) {
@@ -52,6 +56,7 @@ switch (color) {
     console.log("світлофор зломався");
 }
 
+//5
 let numOne = 1;
 let numTwo = 2;
 let operation = "*";
