@@ -35,3 +35,44 @@ if (num == 3 || num == 4 || num == 5) {
 } else {
   console.log("Некоректний номер місяця.");
 }
+
+let color = "зелений";
+
+switch (color) {
+  case "червоний":
+    console.log("стоп");
+    break;
+  case "жовтий":
+    console.log("чекати");
+    break;
+  case "зелений":
+    console.log("йти");
+    break;
+  default:
+    console.log("світлофор зломався");
+}
+
+let numOne = 1;
+let numTwo = 2;
+let operation = "*";
+
+switch (operation) {
+  case "+":
+    console.log(numOne + numTwo);
+    break;
+  case "-":
+    console.log(numOne - numTwo);
+    break;
+  case "*":
+    console.log(numOne * numTwo);
+    break;
+  case "/":
+    if (numTwo === 0) {
+      console.log("На нуль деліти не можливо!!!");
+    } else {
+      console.log(numOne / numTwo);
+      break;
+    }
+  default:
+    console.log("Невідомий оператор");
+}
