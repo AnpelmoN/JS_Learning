@@ -47,7 +47,7 @@ const savedClients = ["Mango", "Poly", "Ajax", "Chelsey"];
 
 const clientNameToFind = "Ajax";
 let message;
-//? fro ... of
+//? for ... of
 for (const client of savedClients) {
   if (client === clientNameToFind) {
     message = "Клієнт з таким ім'ям знайдений!";
