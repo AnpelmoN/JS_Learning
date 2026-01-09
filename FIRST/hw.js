@@ -1,13 +1,10 @@
 const age = 17;
-
 console.log(age);
 
 const name = "Bohdan";
-
 console.log(name);
 
 let isStudent = true;
-
 // console.log(isStudent)
 alert(isStudent);
 
@@ -16,7 +13,6 @@ alert(myString);
 
 let myNumber = 9;
 // let result = myNumber + 10
-
 console.log(myNumber + 10);
 
 const myNull = null;
