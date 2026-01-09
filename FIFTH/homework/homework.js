@@ -1,49 +1,83 @@
-//Вивести в консоль всі числа від 1 до 10 за допомогою циклу while.
-let num = 1;
+//1
+let choice = "Чай";
 
-while (num < 10) {
-  num += 1;
-}
-console.log(num);
-
-//Вивести в консоль всі парні числа від 2 до 20 за допомогою циклу for. Якщо число парне, пропустити його за допомогою continue
-
-const number = 20;
-for (let i = 2; i <= number; i++) {
-  //? Числа які діляться на 2 без остачі ми пропускаємо, таким чином залишаючи всі непарні числа
-  if (i % 2 !== 0) {
-    continue;
-  }
-
-  console.log("pair", i);
-}
-//Вивести в консоль таблицю множення числа 7 за допомогою циклу for.
-
-let multiplier = 7;
-for (let i = 1; i <= 10; i++) {
-  console.log(multiplier * i);
-}
-
-//Створити скрипт, який виводить в консоль всі числа , які менші за n. Якщо зустрічається число, що більше або дорівнює n, цикл повинен бути закінчений за допомогою break.
-let n = 23;
-for (let i = 1; i < n; i++) {
-  if (i >= n) {
-    console.log("Number is large or equal to n");
+switch (choice) {
+  case "Кава":
+    console.log("Кава");
     break;
-  } else {
-    console.log(i);
-  }
+  case "Чай":
+    console.log("Чай");
+    break;
+  case "Сік":
+    console.log("Сік");
+    break;
+  default:
+    console.log("Інше");
 }
 
-//За допомогою циклу while вивести в консоль всі числа від 1 до 20, крім чисел, кратних 3. Якщо зустрінете число, кратне 3, цикл повинен продовжити виконання за допомогою оператора continue.
+//2
+let day = "Субота";
 
-let numbers = 1;
-while (numbers <= 20) {
-  numbers++;
+if (day == "Субота" || day == "Неділя") {
+  console.log("Вихідний");
+} else {
+  console.log("Робочий день");
+}
 
-  if (numbers % 3 === 0) {
-    continue;
-  } else {
-    console.log(numbers);
-  }
+//3
+let num = 4;
+
+if (num == 3 || num == 4 || num == 5) {
+  console.log("Весна");
+} else if (num == 6 || num == 7 || num == 8) {
+  console.log("Літо");
+} else if (num == 9 || num == 10 || num == 11) {
+  console.log("Осінь");
+} else if (num == 12 || num == 1 || num == 2) {
+  console.log("Зима");
+} else {
+  console.log("Некоректний номер місяця.");
+}
+
+//4
+let color = "зелений";
+
+switch (color) {
+  case "червоний":
+    console.log("стоп");
+    break;
+  case "жовтий":
+    console.log("чекати");
+    break;
+  case "зелений":
+    console.log("йти");
+    break;
+  default:
+    console.log("світлофор зломався");
+}
+
+//5
+let numOne = 1;
+let numTwo = 2;
+let operation = "*";
+
+switch (operation) {
+  case "+":
+    console.log(numOne + numTwo);
+    break;
+  case "-":
+    console.log(numOne - numTwo);
+    break;
+  case "*":
+    console.log(numOne * numTwo);
+    break;
+  case "/":
+    if (numTwo === 0) {
+      console.log("На нуль деліти не можливо!!!");
+    } else {
+      console.log(numOne / numTwo);
+      break;
+    }
+  default:
+    console.log("Невідомий оператор");
 }
