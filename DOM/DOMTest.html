@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <p class="item1">text</p>
+      <p class="item2">text</p>
+      <p class="item3">text</p>
+      <p class="item4">text</p>
+    </div>
+    <form action="">
+      <input
+        type="text"
+        name="username"
+        placeholder="Ім'я користувача"
+        required
+      />
+      <label class="invalid-label" for="username"></label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Введіть свою електронну адресу"
+        required
+      />
+      <label class="invalid-label" for="email"></label>
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Введіть свій номер телефону"
+        required
+      />
+      <label class="invalid-label" for="phone"></label>
+
+      <button class="register__btn" type="submit">Зареєструватися</button>
+    </form>
+    <div class="content">
+      <div class="card">
+        <h3>Book</h3>
+        <p>Book description</p>
+      </div>
+    </div>
+
+    <ul class="container">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+
+    <button id="btn-save" class="btn" type="button">Save</button>
+
+    <button id="btn-close" class="btn" type="button">Close</button>
+
+    <button id="btn-open" class="btn" type="button">Open</button>
+
+    <script src="./domScript.js"></script>
+  </body>
+</html>

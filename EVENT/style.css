@@ -1,0 +1,122 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111827; /* темний фон */
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+[data-remove-modal] {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.modal h2 {
+  color: #f9fafb;
+}
+/* INPUTS */
+.form input {
+  width: 90%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #2d3748;
+  background-color: #1f2937;
+  color: #f9fafb;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+/* Placeholder */
+.form input::placeholder {
+  color: #9ca3af;
+}
+
+/* Focus */
+.form input:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+}
+
+/* Hover */
+.form input:hover {
+  border-color: #38bdf8;
+}
+
+/* Invalid (HTML5) */
+.form input:invalid:not(:placeholder-shown) {
+  border-color: #ef4444;
+}
+
+.form input:invalid:not(:placeholder-shown) + .invalid-label {
+  color: #ef4444;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+/* Кнопка */
+.register__btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #22d3ee, #6366f1);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+
+  transition: all 0.25s ease;
+}
+
+.register__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+.register__btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form {
+    padding: 24px 16px;
+  }
+}
+
+.products {
+  height: 500px;
+}

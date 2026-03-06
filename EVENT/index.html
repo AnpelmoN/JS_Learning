@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="box"
+      style="width: 100px; height: 100px; border: 1px solid green"
+    ></div>
+
+    <button data-open-modal>Відкрити модалку</button>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2>Заповніть форму</h2>
+        <form class="form">
+          <input type="text" name="username" placeholder="Ім'я користувача" />
+          <label class="invalid-label" for="username"></label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Введіть свою електронну адресу"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Введіть свій номер телефону"
+          />
+          <label class="invalid-label" for="phone"></label>
+
+          <button class="register__btn" type="submit">Зареєструватися</button>
+        </form>
+
+        <button data-remove-modal>&times;</button>
+      </div>
+    </div>
+
+    <div
+      id="rectangle"
+      style="
+        background-color: bisque;
+        padding: 10px 24px;
+        margin-top: 1200px;
+        display: block;
+        font-size: 20px;
+        margin-left: auto;
+        width: 200px;
+        text-align: center;
+      "
+    >
+      Click me
+    </div>
+    <p id="info" style="margin-left: auto; width: 400px"></p>
+
+    <input type="search" />
+    <h2>List of products</h2>
+    <ul class="products">
+      <li>Молоко</li>
+      <li>Яйця</li>
+      <li>Хліб</li>
+      <li>Сир</li>
+      <li>Куряче філе</li>
+      <li>Рис</li>
+      <li>Макарони</li>
+      <li>Помідори</li>
+      <li>Огірки</li>
+      <li>Яблука</li>
+    </ul>
+
+    <script type="module" src="./js/input.js"></script>
+  </body>
+</html>
