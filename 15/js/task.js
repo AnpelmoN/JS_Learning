@@ -1,0 +1,1 @@
+// Метод Array.prototype.reduce()
